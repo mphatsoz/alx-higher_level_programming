@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-import python_for_me
+#!/usr/bin/env python3
+exec('print("#pythoniscool")')
