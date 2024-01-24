@@ -1,5 +1,10 @@
-#!/usr/bin/python3
-for a in reversed(range(ord("a"), ord("z") + 1)):
-    if a % 2 != 0:
-        a = a - 32
-    print("{:c}".format(a), end="")
+#include "listobject.h"
+#include "object.h"
+void print_python_list_info(PyObject *p)
+{
+	int i, l;
+
+	l = PyList_Size(p)
+	for (i = 0 ; i < l ; i++)
+		printf("[*] Size of the Python List = %d", l);
+}
